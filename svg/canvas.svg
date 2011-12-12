@@ -1,0 +1,140 @@
+<?xml version="1.0" standalone="no"?>
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"  
+   xmlns="http://www.w3.org/2000/svg"
+   onload="top.document.getElementById('svg_canvas').svg=evt.target.ownerDocument"
+   onmouseup="if (top.isOn) top.released()"
+   onmousemove="if (top.isOn) top.drag(evt)"  
+   width="700"
+   height="500" >
+
+
+    
+
+<!-- backdrop  -->
+
+ <rect
+           height="800"
+           width="900"
+           y="-0.1"
+           x="-0.1"
+           style="fill:#134"/>
+
+<!-- screen-->
+
+   <rect
+       width="570"
+       height="390"
+       x="80"
+       y="30" 
+       fill="#111"/>
+
+<!-- view rotation WHEELS  -->
+   <rect
+           onmousedown="if (top.isOn) top.zWheel.grip(evt)"
+           
+           height="30"
+           width="145"
+           x="95"
+           y="445"
+           id="zWheel"
+           fill="#0f0" />
+      <text x="270" y="465" style="stroke: #fff"  pointer-events="none" >RotY</text>
+
+<rect
+           onmousedown="if (top.isOn) top.xWheel.grip(evt)"
+           height="150"
+           width="30"
+           x="20"
+           y="260"
+           id="xWheel"
+           style="fill:#00ff00" />
+      
+ <text x="15" y="230" style="stroke: #fff" pointer-events="none" >RotX</text>
+
+
+
+<!--image
+      pointer-events="none"
+      id="casing"
+      height="520"
+      width="420"
+      x="-10"
+      y="-110"
+      xlink:href="../img/casing.png" /-->
+
+
+
+<clipPath id = "casingClip" >
+    <rect
+       
+       width="570"
+       height="390"
+       x="80"
+       y="30" />
+
+        </clipPath>
+  
+
+<g  clip-path="url(#casingClip)" >
+
+<image
+      id="cardBack"
+      width="500"
+      height="358"
+      x="0"
+      y="0"
+      style="fill:#f00"
+      display= "inline"    
+
+ xlink:href="../img/back.jpg" />
+
+<image 
+      id="cardFront"   
+      pointer-events="none"
+    
+      width="500"
+      height="358"
+      x="0"
+      y="0"
+    
+      xlink:href="../img/front.jpg" />
+
+</g>
+     
+
+
+<!-- Translation stick-->
+
+        <circle
+        
+           style="fill:#880"
+           r="15"
+           cy="460"
+           cx="550"
+           id="translateStick"
+         />
+
+<text x="600" y="465" style="stroke: #fff"   pointer-events="none" >Pan</text>
+
+       
+
+<!-- ZOOM Handle -->
+
+ <rect
+         
+           style="fill:#880"
+           height="30"
+           width="20"
+           x="380"
+           y="445"
+           id="zoomHandle"
+         />
+
+<text x="430" y="465" style="stroke: #fff"  pointer-events="none" >Zoom</text>
+
+
+
+</svg>

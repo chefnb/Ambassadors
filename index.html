@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Holbein Ambassadors Interactive Viewer</title>
+  <meta name="author" content="Nick Braun" />
+  <meta name="Content-Script-Type" content="text/javascript" />
+  <meta name="Content-Style-Type" content="text/css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/picturecard.js"  type="application/javascript"/></script>
+  <script src="js/ui_components.js"  type="application/javascript"/></script>
+  <script src="js/main.js" type="application/javascript"/></script>
+
+  <script>
+    window.onload= function(){
+        if (!document.getElementById('svg_canvas').svg) {
+         document.getElementById('loading').innerHTML = "\
+         Sorry, there is a compatibility problem with the browser you are using. Try a different one"
+          }    
+     } 
+   </script>
+
+ </head>
+
+ <body>
+
+  <h1>&nbsp;The Ambassadors (Holbein)</h1>
+  <h2>&nbsp; Anamorphic Perspective Viewer</h2>
+
+   <div id="loading"> You must enable JavaScript to run this content</div>
+   <script type="text/javascript">
+      document.getElementById('loading').innerHTML = 'Loading...'
+   </script>
+
+   <div id="container">
+      Author: Nick Braun, 2011; SVG/Javascript source code <a href="http://github.com/chefnb/3d-viewer">here</a> 
+      <p>Recommended browser: Firefox 3.6+<p><br/>
+
+     <object id="svg_canvas" data="svg/canvas.svg" width="800" height="500" type="image/svg+xml" onload="init()"/>
+   </div>
+ </body>
+</html>

@@ -1,0 +1,20 @@
+
+This is a custom viewer for the famous Ambassadors painting by Holbein
+
+The `anamorphed' skull of the painting is revealed by rotation and panning in 3d (orthographic) projection 
+
+
+Author: Nick Braun, 2011
+
+Contact: nick@sharpitor.com
+
+Language: Javascript/SVG
+
+
+Classes
+-------
+PictureCard  
+Joystick2D     
+Joystick1D 
+HWheel 	
+VWheel 
