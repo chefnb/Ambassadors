@@ -20,15 +20,17 @@
   var zoom=1.0
   var zoomMin=0.5
   var zoomMax=5.0
-  var tx=350.0
-  var ty=230.0
+  var tx0=350.0
+  var ty0=230.0
   var txMin=-50
   var txMax=700
   var tyMin=-200
   var tyMax=500
-   
-     
-      var m=[ [1,0,0],[0,1,0] ,[0,0,1]]  // Model-view matrix
+  
+  var tx=tx0
+  var ty=ty0
+ 
+  var m=[ [1,0,0],[0,1,0] ,[0,0,1]]  // Model-view matrix
      
  var setFaceUp = function(bool){
 
@@ -39,6 +41,14 @@
             //   back.setAttributeNS(null,'display','inline')
                   }
       }
+
+  this.resetMV=function(y){
+         m=[ [1,0,0],[0,1,0] ,[0,0,1]]
+         zoom=1
+         tx=tx0
+         ty=ty0
+       }
+
 
   this.translate=function(dx,dy){
 

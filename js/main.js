@@ -54,34 +54,35 @@
 
 }
 
-
+ 
+ 
 
 //***** Mouse events ****
 
+  function reset(){
+     theImage.resetMV()
+     theImage.rotateX(Math.PI/2.0)
+   }
+
 
   function released(){
- 
-    if (isOn) {
- 
+
       zWheel.released()
       xWheel.released()
       zoomHandle.released()
       translateStick.released()
      
-        }
-
+     
         
    }
   
   function drag(evt){ 
    
-    if (isOn) {
        zWheel.drag(evt)
        xWheel.drag(evt)
        zoomHandle.drag(evt)
        translateStick.drag(evt)
-         }
-  
+   
   }
 
 

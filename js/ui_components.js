@@ -98,7 +98,7 @@ function Joystick2D(canvas,handle_id,updateFunc){
 
 
          x=  (x=x0+dX)< x0-s ? x0-s: x > x0 +s ? x0+s :x
-         y=  (y=y0+dX)< y0-s ? y0-s: y > y0 +s ? y0+s :y
+         y=  (y=y0+dY)< y0-s ? y0-s: y > y0 +s ? y0+s :y
 
 
       //   x=Math.min(Math.max(x0+dX,x0-s),x0+s);        
