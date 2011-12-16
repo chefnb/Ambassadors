@@ -16,8 +16,8 @@
 <!-- backdrop  -->
 
  <rect
-           height="800"
-           width="900"
+           height="500"
+           width="700"
            y="-0.1"
            x="-0.1"
            style="fill:#134"/>
@@ -41,7 +41,6 @@
            y="445"
            id="zWheel"
            fill="#0f0" />
-      <text x="270" y="465" style="stroke: #fff"  pointer-events="none" >RotY</text>
 
 <rect
            onmousedown="if (top.isOn) top.xWheel.grip(evt)"
@@ -52,18 +51,6 @@
            id="xWheel"
            style="fill:#00ff00" />
       
- <text x="15" y="230" style="stroke: #fff" pointer-events="none" >RotX</text>
-
-
-
-<!--image
-      pointer-events="none"
-      id="casing"
-      height="520"
-      width="420"
-      x="-10"
-      y="-110"
-      xlink:href="../img/casing.png" /-->
 
 
 
@@ -117,8 +104,6 @@
            id="translateStick"
          />
 
-<text x="600" y="465" style="stroke: #fff"   pointer-events="none" >Pan</text>
-
        
 
 <!-- ZOOM Handle -->
@@ -133,7 +118,6 @@
            id="zoomHandle"
          />
 
-<text x="430" y="465" style="stroke: #fff"  pointer-events="none" >Zoom</text>
 
 
 <!-- Rest BUTTON -->
@@ -143,9 +127,17 @@
           onmouseover="this.setAttributeNS(null,'fill','#f80')"
           onmouseout="this.setAttributeNS(null,'fill','#830')"
           r="20"
-          cx="35"
-          cy="130"
+          cx="33"
+          cy="129"
           fill="#aa0000" />
-<text x="15" y="90" style="stroke: #fff"  pointer-events="none" >Reset</text>
+
+<image
+      pointer-events="none"
+      id="casing"
+      height="500"
+      width="700"
+      x="0"
+      y="0"
+      xlink:href="../img/casing.png" />
 
 </svg>
